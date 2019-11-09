@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello HTML</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .i-header {
+            grid-area: c-header;
+            background-color: rgb(243, 147, 147);
+        }
+
+        .i-body-left {
+            grid-area: c-body-left;
+            background-color: rgb(119, 233, 138);
+        }
+
+        .i-body-right {
+            grid-area: c-body-right;
+            background-color: rgb(238, 124, 232);
+            font-size: 290px;
+            overflow:auto;
+        }
+
+        .i-footer {
+            grid-area: c-footer;
+            background-color: rgb(124, 151, 236);
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 40px auto 40px;
+            grid-template-columns: 200px auto;
+            grid-template-areas:
+                "c-header     c-header    "
+                "c-body-left  c-body-right "
+                "c-footer     c-footer    ";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="i-header">
+        </div>
+        <div class="i-body-left">
+
+        </div>
+        <div class="i-body-right">
+            <a href="https://github.com/">跳转到 Github</a>
+            <a href="https://github.com/">跳转到 Github</a>
+        </div>
+        <div class="i-footer">
+            <a href="https://github.com/">跳转到 Github</a>
+        </div>
+    </div>
+</body>
+
+</html>
