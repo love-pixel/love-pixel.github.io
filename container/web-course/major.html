@@ -12,24 +12,6 @@
             padding: 0;
         }
 
-        /* .Head {
-            width:100%;
-            height:50px;
-            display: flex;
-            background-color:aqua;
-        }
-
-        .Head > .Home {
-            height:100%;
-            background-color:aqua;
-
-        }
-        .Head > .LorR {
-            width:100px;
-            height:100%;
-            background-color:aqua;
-        } */
-
         .GridContainer {
             display: grid;
             grid-template-rows: 2fr 1fr auto 1fr;
@@ -130,11 +112,11 @@
         <div class="GHeader">
             <nav>
                 <ul>
-                    <li><a href="./home.html">主页</a></li>
-                    <li><a href="./profile.html">学院概况</a></li>
                     <li><a href="./major.html">开设专业</a></li>
-                    <li><a href="./news.html">新闻</a></li>
-                    <li class="right"><a href="./register_and_login1.html">登录</a></li>
+                    <!-- <li><a href="./profile.html">学院概况</a></li> -->
+                    <!-- <li><a href="#">开设专业</a></li> -->
+                    <!-- <li><a href="#">新闻</a></li> -->
+                    <li class="right"><a href="./home.html">返回主页</a></li>
                 </ul>
             </nav>
         </div>
@@ -165,35 +147,6 @@
             lb.src = "../../res/tl-" + num + ".png"
             // console.log(num)
         }, 1000)
-        // var left = document.getElementById("left")
-        // var right = document.getElementById("right")
-        // // 点击左箭头换图
-        // left.onclick = function () {
-        //     num--;
-        //     if (num == 0) {
-        //         num = 1;
-        //     }
-        //     lb.src = "image/" + num + ".png"
-        // }
-        // // 点击右键换箭头
-        // right.onclick = function () {
-        //     num++;
-        //     if (num == 5) {
-        //         num = 4;
-        //     }
-        //     lb.src = "image/" + num + ".png"
-        // }
-        // // 点击圆点换图
-        // var allLi = document.getElementsByTagName('ul')[0].getElementsByTagName("li");
-        // for (var i = 0; i < allLi.length; i++) {
-        //     // 给每个li元素赋值，每循环一次，i+1;
-        //     allLi[i].index = i;
-        //     allLi[i].onclick = function () {
-        //         // li的索引是从0开始的，所以要+1
-        //         var num = this.index + 1;
-        //         lb.src = "image/" + num + ".png"
-        //     }
-        // }
     </script>
 </body>
 
