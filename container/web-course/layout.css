@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.GridContainer {
+    display: grid;
+    grid-template-rows: 2fr 1fr auto 1fr;
+    grid-template-areas:
+        "Logo"
+        "Header"
+        "Body"
+        "Footer";
+}
+
+.GLogo {
+    grid-area: "Logo";
+    background-color: #333;
+}
+
+.GHeader {
+    grid-area: "Header";
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.GBody {
+    grid-area: "Body";
+    background-color: antiquewhite;
+    display:block;
+}
+
+.GFooter {
+    grid-area: "Footer";
+    background: #333;
+    color: white;
+}
+
+/* ----------- 上导航 ---------------- */
+.GHeader>nav>ul {
+    display: flex;
+    background: #333;
+    list-style: none;
+}
+
+.GHeader>nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+}
+
+.GHeader>nav a:hover {
+    background-color: #111;
+}
+
+.GHeader>nav .right {
+    margin-left: auto;
+}

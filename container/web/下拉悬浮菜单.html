@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello HTML</title>
+    <style>
+        .list-menu {
+            display: flex;
+            background: #f7f7f7;
+            border-radius: 5px;
+            padding: 10px 0;
+            justify-content: space-around;
+            color: #205D67;
+            width: 80%;
+        }
+
+        .list-menu li {
+            list-style: none;
+        }
+
+        .list-menu li:hover>ul {
+            box-shadow: 0 0 10px #ccc;
+            display: block;
+        }
+
+        .list-menu li ul {
+            position: absolute;
+            display: none;
+            background: #fff;
+            border: 1px #f7f7f7 solid;
+            border-radius: 5px;
+            width: 10%;
+            margin: 0;
+            padding: 0;
+            color: #205D67;
+            font-size: 0.9rem;
+        }
+
+        .list-menu li ul a {
+            text-decoration: none;
+            color: #205D67;
+        }
+
+        .list-menu li ul a li {
+            line-height: 30px;
+            padding-left: 10%;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .list-menu li ul a li:hover {
+            background: #f7f7f7;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list-menu">
+        <li>按算法分类
+            <ul>
+                <a href="#">
+                    <li>分治</li>
+                </a>
+                <a href="#">
+                    <li>贪心</li>
+                </a>
+                <a href="#">
+                    <li>链表</li>
+                </a>
+                <a href="#">
+                    <li>搜索</li>
+                </a>
+                <a href="#">
+                    <li>字符串</li>
+                </a>
+                <a href="#">
+                    <li>动态规划</li>
+                </a>
+                <a href="#">
+                    <li>图论</li>
+                </a>
+            </ul>
+        </li>
+        <li>按难易程度分类
+            <ul>
+                <a href="#">
+                    <li>简单</li>
+                </a>
+                <a href="#">
+                    <li>中等</li>
+                </a>
+                <a href="#">
+                    <li>很难</li>
+                </a>
+                <a href="#">
+                    <li>超难</li>
+                </a>
+            </ul>
+        </li>
+        <li>按数据结构分类
+            <ul>
+                <a href="#">
+                    <li>线性结构</li>
+                </a>
+                <a href="#">
+                    <li>树结构</li>
+                </a>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
