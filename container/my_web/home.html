@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta lang="utf-8">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="global.css" />
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <link rel="stylesheet" type="text/css" href="menu.css" />
+    <link rel="stylesheet" type="text/css" href="image.css" />
+    <link rel="stylesheet" type="text/css" href="card.css" />
+    <style>
+        .Layout_Body>h1 {
+            text-align: center;
+            margin: 40px;
+            /* border-bottom: #111; */
+            /* border-bottom-width: 3px; */
+            /* border-bottom-style: dashed; */
+        }
+    </style>
+
+    <script>
+
+    </script>
+
+</head>
+
+<body>
+    <!-- 总体布局 -->
+    <div class="Layout">
+        <!-- Logo -->
+        <div class="Layout_Logo">
+            <img src="../../res/logo.png" style="height: 100%;">
+        </div>
+        <!-- 导航下拉菜单 -->
+        <div class="Layout_Head">
+            <!-- 主页 -->
+            <div class="Menu">
+                <div class="MenuTitle">
+                    <div class="CenterText"><a href="./home.html">主页</a></div>
+                </div>
+                <div class="MenuList">
+                    <a href="./profile.html">学院概况</a>
+                    <a>开设专业</a>
+                    <a>新闻</a>
+                </div>
+            </div>
+            <!-- 学院概况 -->
+            <div class="Menu">
+                <div class="MenuTitle">
+                    <div class="CenterText"><a href="profile.html">学院概况</a></div>
+                </div>
+                <div class="MenuList">
+                    <a>学院历史</a>
+                    <a>历来成就</a>
+                </div>
+            </div>
+            <!-- 开设专业 -->
+            <div class="Menu">
+                <div class="MenuTitle">
+                    <div class="CenterText"><a href="./major.html">开设专业</a></div>
+                </div>
+                <div class="MenuList">
+                    <a>软件工程</a>
+                    <a>计算机科学与技术</a>
+                    <a>信息管理</a>
+                </div>
+            </div>
+            <!-- 新闻 -->
+            <div class="Menu">
+                <div class="MenuTitle">
+                    <div class="CenterText"><a href="./news.html">新闻</a></div>
+                </div>
+                <div class="MenuList">
+                    <a>Text in here</a>
+                    <a>Text in here</a>
+                    <a>Text in here</a>
+                </div>
+            </div>
+            <!-- 登录/注册 -->
+            <div class="Menu" style="margin-left: auto;">
+                <div class="MenuTitle">
+                    <div class="CenterText">登录/注册</div>
+                </div>
+                <div class="MenuList">
+                    <a>登录</a>
+                    <a>注册</a>
+                </div>
+            </div>
+        </div>
+        <!-- 主要内容 -->
+        <div class="Layout_Body">
+            <!-- 轮播图 -->
+            <div class="FullLine">
+                <img src="../../res/tl-2.png" id="PhotoWall">
+            </div>
+            <h1>新闻</h1>
+            <!-- 一行1卡片 -->
+            <div class="FullLine">
+                <div class="CardBlock" style="width: 100%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-1.png);"></div>
+                        <div class="Text">
+                            <p>Text in here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 一行2卡片 -->
+            <div class="FullLine">
+                <div class="CardBlock" style="width: 50%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-1.png);"></div>
+                        <div class="Text">
+                            <p>Text in here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="CardBlock" style="width: 50%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-2.png);"></div>
+                        <div class="Text">
+                            <p>Text in here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 一行3卡片 -->
+            <div class="FullLine">
+                <div class="CardBlock" style="width: 30%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-1.png);"></div>
+                        <div class="Text">
+                            <p>Text in here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="CardBlock" style="width: 40%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-2.png);"></div>
+                        <div class="Text">
+                            <p>Text in here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="CardBlock" style="width: 30%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-2.png);"></div>
+                        <div class="Text">
+                            <p>Text in here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="FullLine">
+                <div class="Block">
+                    <a>Text in here</a>
+                </div>
+                <div class="Block">
+                    <a>Text in here</a>
+                </div>
+                <div class="Block" style="margin: 0 20px; font-size: large;">
+                    <div class="CenterText"><a>love-pixel.github.io&copy;</a></div>
+                </div>
+
+            </div> -->
+        </div>
+        <!-- 结束 -->
+        <div class="Layout_Tail">
+            <div class="Block" style="margin: 0 20px; font-size: large;">
+                <div class="CenterText"><a>love-pixel.github.io&copy;</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var lb = document.getElementById("PhotoWall")
+        var num = 1;
+        setInterval(function () {
+            num++;
+            if (num == 4) {
+                num = 1;
+            }
+            lb.src = "../../res/tl-" + num + ".png"
+        }, 1000)
+    </script>
+</body>
+
+</html>

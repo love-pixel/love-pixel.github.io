@@ -1,0 +1,45 @@
+.Layout {
+    display: grid;
+    /* grid-template-rows: 2fr 1fr auto 1fr; */
+    grid-template-rows: 100px 50px auto 40px;
+    grid-template-areas:
+        "Layout_Logo"
+        "Layout_Head"
+        "Layout_Body"
+        "Layout_Tail";
+    background-color: #27825d;
+}
+
+.Layout_Logo {
+    grid-area: "Layout_Logo";
+    /* display: flex; */
+}
+
+.Layout_Head {
+    grid-area: "Layout_Head";
+    display: flex;
+}
+
+.Layout_Body {
+    grid-area: "Layout_Body";
+    /* display: flex; */
+    display: inline-block;
+    background-color: whitesmoke;
+}
+
+.Layout_Tail {
+    grid-area: "Layout_Tail";
+    display: flex;
+    background-color: #333;
+    color: white;
+}
+
+.Layout p {
+    color: white;
+    margin: 10px;
+}
+
+.Layout .Layout_Body p {
+    color: black;
+    margin: 10px;
+}
