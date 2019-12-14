@@ -1,10 +1,23 @@
-.CardBlock {
-    width: 100%;
-    display: block;
-    margin: 20px;
+.TwoLine {
+    width: auto;
+    height: auto;
+    margin: 50px 200px;
+    
+    /* background-color: aqua; */
 }
 
-.Card {
+.OneLine {
+    width: 100%;
+    background-color: blanchedalmond;
+
+}
+
+.OneLine p {
+    font-size: larger;
+    padding: 20px;
+}
+
+.TCard {
     width:100%;
     min-height: 200px;
     height:100px;
@@ -12,17 +25,17 @@
     transition: 1.0s;
     display:flex;
 }
-.Card:hover {
+/* .TCard:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: 1;
     transform: scale(1.02, 1.02);
-}
-.Card .Image {
+} */
+.TCard .Image {
     width:20%;
     height:100%;
     background-color: rgb(30, 255, 0);
 }
-.Card .Text {
+.TCard .Text {
     width:80%;
     height:100%;
     height:auto;

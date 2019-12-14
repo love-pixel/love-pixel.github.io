@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta lang="utf-8">
+    <title>实验室</title>
+    <link rel="stylesheet" type="text/css" href="global.css" />
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <link rel="stylesheet" type="text/css" href="menu.css" />
+    <link rel="stylesheet" type="text/css" href="image.css" />
+    <link rel="stylesheet" type="text/css" href="rcard.css" />
+
+    <style>
+
+    </style>
+
+    <script>
+
+    </script>
+
+</head>
+
+<body>
+    <div class="Layout">
+        <div class="Layout_Logo">
+            <img src="../../res/logo.png" style="height: 100%;">
+        </div>
+        <div class="Layout_Head">
+            <div class="Menu">
+                <div class="MenuTitle">
+                    <div class="CenterText"><a href="./profile.html">实验室</a></div>
+                </div>
+            </div>
+            <div class="Menu">
+                <div class="MenuTitle">
+                    <div class="CenterText">计算机科学与技术</div>
+                </div>
+                <div class="MenuList">
+                    <a>李瑞改</a>
+                </div>
+            </div>
+            <div class="Menu">
+                <div class="MenuTitle">
+                    <div class="CenterText">软件工程</div>
+                </div>
+                <div class="MenuList">
+                    <a>王波</a>
+                </div>
+            </div>
+            <div class="Menu">
+                <div class="MenuTitle">
+                    <div class="CenterText">信息管理与信息系统</div>
+                </div>
+                <div class="MenuList">
+                    <a>纪明宇</a>
+                </div>
+            </div>
+            <div class="Menu" style="margin-left: auto;">
+                <div class="MenuTitle">
+                    <div class="CenterText"><a href="./home.html">主页</a></div>
+                </div>
+                <div class="MenuList">
+                    <a href="./profile.html">学院概况</a>
+                    <a>开设专业</a>
+                    <a>新闻</a>
+                </div>
+            </div>
+        </div>
+        <div class="Layout_Body">
+            <div class="cardBox">
+                <div class="headerBox" style="background-color: #4caf50;">
+                    <p>
+                        <a title="查看详情" style="cursor: pointer; color:white"
+                            onclick="viewXmInfo('${var.OMP_XM_ID}');">实验室一</a>
+                    </p>
+                </div>
+                <div class="bodyBox">
+                    <p>负责专业：计科</p>
+                    <p>负责老师：王波</p>
+                    <p>学生责任人：王五</p>
+                    <p>实验室状态：<span style="color:green">启动</span></p>
+                    <p>实验项目：基因浏览器</p>
+                    <p>学生人数：25</p>
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="headerBox" style="background-color: #4caf50;">
+                    <p>
+                        <a title="查看详情" style="cursor: pointer; color:white"
+                            onclick="viewXmInfo('${var.OMP_XM_ID}');">实验室二</a>
+                    </p>
+                </div>
+                <div class="bodyBox">
+                    <p>负责专业：计科</p>
+                    <p>负责老师：王波</p>
+                    <p>学生责任人：王五</p>
+                    <p>实验室状态：<span style="color:green">启动</span></p>
+                    <p>实验项目：基因浏览器</p>
+                    <p>学生人数：25</p>
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="headerBox" style="background-color: #4caf50;">
+                    <p>
+                        <a title="查看详情" style="cursor: pointer; color:white"
+                            onclick="viewXmInfo('${var.OMP_XM_ID}');">实验室三</a>
+                    </p>
+                </div>
+                <div class="bodyBox">
+                        <p>负责专业：计科</p>
+                    <p>负责老师：王波</p>
+                    <p>学生责任人：王五</p>
+                    <p>实验室状态：<span style="color:red">关闭</span></p>
+                    <p>实验项目：基因浏览器</p>
+                    <p>学生人数：25</p>
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="headerBox" style="background-color: #4caf50;">
+                    <p>
+                        <a title="查看详情" style="cursor: pointer; color:white"
+                            onclick="viewXmInfo('${var.OMP_XM_ID}');">实验室四</a>
+                    </p>
+                </div>
+                <div class="bodyBox">
+                        <p>负责专业：计科</p>
+                    <p>负责老师：王波</p>
+                    <p>学生责任人：王五</p>
+                    <p>实验室状态：<span style="color:green">启动</span></p>
+                    <p>实验项目：基因浏览器</p>
+                    <p>学生人数：25</p>
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="headerBox" style="background-color: #4caf50;">
+                    <p>
+                        <a title="查看详情" style="cursor: pointer; color:white"
+                            onclick="viewXmInfo('${var.OMP_XM_ID}');">实验室五</a>
+                    </p>
+                </div>
+                <div class="bodyBox">
+                        <p>负责专业：计科</p>
+                    <p>负责老师：王波</p>
+                    <p>学生责任人：王五</p>
+                    <p>实验室状态：<span style="color:red">关闭</span></p>
+                    <p>实验项目：基因浏览器</p>
+                    <p>学生人数：25</p>
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="headerBox" style="background-color: #4caf50;">
+                    <p>
+                        <a title="查看详情" style="cursor: pointer; color:white"
+                            onclick="viewXmInfo('${var.OMP_XM_ID}');">实验室六</a>
+                    </p>
+                </div>
+                <div class="bodyBox">
+                        <p>负责专业：计科</p>
+                    <p>负责老师：王波</p>
+                    <p>学生责任人：王五</p>
+                    <p>实验室状态：<span style="color:green">启动</span></p>
+                    <p>实验项目：基因浏览器</p>
+                    <p>学生人数：25</p>
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="headerBox" style="background-color: #4caf50;">
+                    <p>
+                        <a title="查看详情" style="cursor: pointer; color:white"
+                            onclick="viewXmInfo('${var.OMP_XM_ID}');">实验室七</a>
+                    </p>
+                </div>
+                <div class="bodyBox">
+                        <p>负责专业：计科</p>
+                    <p>负责老师：王波</p>
+                    <p>学生责任人：王五</p>
+                    <p>实验室状态：<span style="color:red">关闭</span></p>
+                    <p>实验项目：基因浏览器</p>
+                    <p>学生人数：25</p>
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="headerBox" style="background-color: #4caf50;">
+                    <p>
+                        <a title="查看详情" style="cursor: pointer; color:white"
+                            onclick="viewXmInfo('${var.OMP_XM_ID}');">实验室八</a>
+                    </p>
+                </div>
+                <div class="bodyBox">
+                        <p>负责专业：计科</p>
+                    <p>负责老师：王波</p>
+                    <p>学生责任人：王五</p>
+                    <p>实验室状态：<span style="color:green">启动</span></p>
+                    <p>实验项目：基因浏览器</p>
+                    <p>学生人数：25</p>
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="headerBox" style="background-color: #4caf50;">
+                    <p>
+                        <a title="查看详情" style="cursor: pointer; color:white"
+                            onclick="viewXmInfo('${var.OMP_XM_ID}');">实验室九</a>
+                    </p>
+                </div>
+                <div class="bodyBox">
+                        <p>负责专业：计科</p>
+                    <p>负责老师：王波</p>
+                    <p>学生责任人：王五</p>
+                    <p>实验室状态：<span style="color:red">关闭</span></p>
+                    <p>实验项目：基因浏览器</p>
+                    <p>学生人数：25</p>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div class="Layout_Tail">
+            <div class="Block" style="margin: 0 20px; font-size: large;">
+                <div class="CenterText"><a>love-pixel.github.io&copy;</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
