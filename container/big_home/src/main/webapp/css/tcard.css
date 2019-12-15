@@ -1,0 +1,244 @@
+.ContentContainer {
+    width: 100%;
+    /* height:300px; */
+    background-color: antiquewhite;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin: 10px; */
+}
+
+.Card {
+    width:95%;
+    /* height:auto; */
+    min-height: 200px;
+    height:100px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    transition: 1.0s;
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+}
+.Card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: aqua; */
+    opacity: 1;
+    transform: scale(1.02, 1.02);
+}
+.Card .Image {
+    width:20%;
+    height:100%;
+    background-color: rgb(30, 255, 0);
+}
+.Card .Text {
+    width:80%;
+    height:100%;
+    height:auto;
+    background-color: rgb(0, 255, 191);
+    font-size: large;
+    padding: 10px;
+}
+body,html{height: 100%;}
+
+.GridContainer {
+    display: grid;
+    grid-template-rows: 2fr 1fr auto 1fr;
+    /* calc(100% - 4fr) */
+    grid-template-areas:
+            "Logo"
+            "Header"
+            "Body"
+            "Footer";
+    /* height: 100%; */
+}
+
+
+.GBody {
+    /* background-color: rgb(0, 255, 0); */
+    background-image: url('/res/hl-4.jpg');
+    /* height: 600px; */
+    /* height: 100%; */
+    /* height: auto; */
+    background-repeat: no-repeat;
+    /* background-size:100% 100%; */
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    width: 100%;
+    height: 1200px;
+}
+
+/* ----------- 上导航 ---------------- */
+.GHeader>nav>ul {
+    display: flex;
+    background: #333;
+    list-style: none;
+}
+
+.GHeader>nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+}
+
+.GHeader>nav a:hover {
+    background-color: #111;
+}
+
+.GHeader>nav .center {
+    margin: 0 auto;
+}
+
+
+.Main {
+    width: 20%;
+    /* height: 60%; */
+    min-width: 400px;
+    min-height: 300px;
+    background-color: rgb(238, 233, 243);
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    /*脱离文档流*/
+    top: 50%;
+    /*偏移*/
+    /* margin-top: -30%;  */
+    transform: translateY(-50%);
+    display: block;
+    opacity: 0.60;
+    border-radius: 15px;
+    border-width: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 1.0s;
+}
+
+.Main:hover {
+    opacity: 0.9;
+
+}
+
+.ROrL {
+    width: 200%;
+    height: 70px;
+    /* background-color:bisque; */
+    /* margin:0 auto; */
+    /* margin-top: 10px; */
+    text-align: center;
+    display: flex;
+}
+
+#LoginButton {
+    text-align: right;
+    width: 50%;
+    border: none;
+    font-size: 40px;
+    background-color: rgb(117, 255, 191);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    transition: 0.5s;
+    border-right: rgb(218, 218, 218) 3px;
+    border-right-style:double;
+}
+
+#RegisterButton {
+    text-align: left;
+    width: 50%;
+    border: none;
+    font-size: 40px;
+    background-color: rgb(160, 236, 255);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: 0.5s;
+}
+
+#SubmitButton {
+    text-align: center;
+    /* width: 50%; */
+    border: none;
+    margin: 10px;
+    font-size: 30px;
+    background-color: rgb(103, 106, 255);
+    border-radius: 15px;
+    /* border-bottom-right-radius: 15px; */
+    /* border-top-right-radius: 15px; */
+    transition: 0.5s;
+    width: 100px;
+}
+
+#LoginButton:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(59, 255, 164);
+    opacity: 1;
+}
+
+#RegisterButton:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(113, 227, 255);
+    opacity: 1;
+}
+
+#SubmitButton:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(23, 27, 255);
+    opacity: 1;
+}
+
+
+.form-group {
+    position: relative;
+    padding: 15px;
+    /* opacity:1.0; */
+    font-size: x-large;
+}
+
+.form-group input,
+.form-group select{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 10px;
+    /* padding-top: 10px; */
+    margin-bottom: 15px;
+    background-color: rgb(238, 233, 243);
+    /* font-size: 0.6em; */
+}
+
+/* pointer-events，元素重叠，或元素被透明元素遮挡，为遮挡元素添加属性，可使其指针事件无效 */
+.form-group label {
+    position: absolute;
+    padding: 13px;
+    pointer-events: none;
+    top: 5px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.form-group input:focus{
+    border-bottom: 2px solid rgb(25, 0, 255);
+}
+
+/* 输入框获得焦点，输入框校验成功，input之后的全部label */
+.form-group input:focus+label,
+.form-group input:valid+label{
+    top: -20px;
+    color: seagreen;
+    font-size: large;
+    font-weight: bold;
+}
+
+.focus{
+    margin-top: -20px;
+    top: -20px;
+    color: seagreen;
+    font-size: large;
+    font-weight: bold;
+}
+select{
+    font-family: "Microsoft YaHei UI";
+    font-size: 15px;
+}

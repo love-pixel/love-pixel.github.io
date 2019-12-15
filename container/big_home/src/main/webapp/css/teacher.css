@@ -1,0 +1,36 @@
+.TImage {
+    min-height: 300px;
+    background-color: aquamarine;
+
+}
+
+.TText {
+
+    height: 60px;
+    font-size: larger;
+    /* min-height: 400px; */
+    /* max-width: 500px; */
+    background-color: bisque;
+    /* padding: 20px; */
+}
+
+
+.SCard {
+    transition: 1.0s;
+
+}
+
+.SCard:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+    transform: scale(1.02, 1.02);
+}
+
+.FullLine {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.Block {
+    margin: 0 auto;
+}

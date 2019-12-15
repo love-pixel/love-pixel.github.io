@@ -1,0 +1,32 @@
+.CardBlock {
+    width: 100%;
+    display: block;
+    margin: 20px;
+}
+
+.Card {
+    width:100%;
+    min-height: 200px;
+    height:100px;
+    margin: 0 auto;
+    transition: 1.0s;
+    display:flex;
+}
+.Card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+    transform: scale(1.02, 1.02);
+}
+.Card .Image {
+    width:20%;
+    height:100%;
+    background-color: rgb(30, 255, 0);
+}
+.Card .Text {
+    width:80%;
+    height:100%;
+    height:auto;
+    background-color: bisque;
+    font-size: large;
+    padding: 10px;
+}
