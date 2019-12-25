@@ -1,0 +1,9 @@
+.News {
+    width: 100%;
+    padding: 15px;
+}
+
+.News a {
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}

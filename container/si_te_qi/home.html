@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta lang="utf-8">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="global.css" />
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <link rel="stylesheet" type="text/css" href="menu.css" />
+    <link rel="stylesheet" type="text/css" href="image.css" />
+    <link rel="stylesheet" type="text/css" href="card.css" />
+    <link rel="stylesheet" type="text/css" href="news.css" />
+    <style>
+
+    </style>
+
+    <script>
+
+    </script>
+
+</head>
+
+<body>
+    <!-- 总体布局 -->
+    <div class="Layout">
+        <!-- Logo -->
+        <div class="Layout_Logo">
+            <div class="CenterText"><h1>考研网</h1></div>
+            <!-- <img src="../../res/logo.png" style="height: 100%;"> -->
+        </div>
+        <!-- 导航下拉菜单 -->
+        <div class="Layout_Head">
+            <!-- 主页 -->
+            <div class="Menu">
+                <div class="MenuTitle">
+                    <div class="CenterText"><a href="./home.html">主页</a></div>
+                </div>
+                <div class="MenuList">
+                    <a href="./profile.html">学院概况</a>
+                    <a>开设专业</a>
+                    <a>新闻</a>
+                </div>
+            </div>
+            <!-- 登录/注册 -->
+            <div class="Menu" style="margin-left: auto;">
+                <div class="MenuTitle">
+                    <div class="CenterText">登录/注册</div>
+                </div>
+                <div class="MenuList">
+                    <a href="./login.html">登录</a>
+                    <a href="./register.html">注册</a>
+                </div>
+            </div>
+        </div>
+        <!-- 主要内容 -->
+        <div class="Layout_Body">
+            <!-- 轮播图 -->
+            <div class="FullLine">
+                <img src="../../res/stq1.jpg" id="PhotoWall">
+            </div>
+            <!-- 一行4卡片 -->
+            <div class="FullLine">
+                <div class="CardBlock" style="width: 25%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-1.png);"></div>
+                        <div class="Text">
+                            <div class="CenterText">院校介绍</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CardBlock" style="width: 25%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-2.png);"></div>
+                        <div class="Text">
+                            <div class="CenterText">专业解析</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CardBlock" style="width: 25%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-2.png);"></div>
+                        <div class="Text">
+                            <div class="CenterText">资料库</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CardBlock" style="width: 25%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-2.png);"></div>
+                        <div class="Text">
+                            <div class="CenterText">报考流程介绍</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 一行1卡片 -->
+            <div class="FullLine">
+                <div class="CardBlock" style="width: 33%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-1.png);"></div>
+                        <div class="Text">
+                            <div class="CenterText">招生咨询</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CardBlock" style="width: 33%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-1.png);"></div>
+                        <div class="Text">
+                            <div class="CenterText">国家政策</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CardBlock" style="width: 33%;">
+                    <div class="Card">
+                        <div class="Image" style="background-image: url(../../res/tl-1.png);"></div>
+                        <div class="Text">
+                            <div class="CenterText">院校政策</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Stream">
+                <div class="News"><a>News</a></div>
+                <div class="News"><a>News</a></div>
+                <div class="News"><a>News</a></div>
+                <div class="News"><a>News</a></div>
+                <!-- Hello<br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                World<br> -->
+            </div>
+        </div>
+        <!-- 结束 -->
+        <div class="Layout_Tail">
+            <div class="Block" style="margin: 0 20px; font-size: large;">
+                <div class="CenterText"><a>love-pixel.github.io&copy;</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var lb = document.getElementById("PhotoWall")
+        var num = 1;
+        setInterval(function () {
+            num++;
+            if (num == 4) {
+                num = 1;
+            }
+            lb.src = "../../res/stq" + num + ".jpg"
+        }, 3000)
+    </script>
+</body>
+
+</html>

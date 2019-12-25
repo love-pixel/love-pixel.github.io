@@ -1,0 +1,48 @@
+.Menu {
+    height:auto;
+    color: white;
+    display: inline-block;
+}
+
+.MenuTitle {
+    height:100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.MenuList {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* cursor: pointer; */
+}
+
+.Menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.MenuList a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.MenuList a:hover {
+    background-color: #f1f1f1;
+    /* cursor: pointer; */
+}
+
+.Menu:hover {
+    background-color: #155a3e;
+    transition: 1.0s;
+}
+
+.Menu:hover .MenuList {
+    display: block;
+    /* opacity: 1; */
+}
+
